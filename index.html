@@ -5,7 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="colorGame.css">
 </head>
 <body>
-	<h1>The Great 
+	
+	<h1>Let's Play.. 
 		<br>
 		<span id="colorDisplay">RGB</span> 
 		<br>
@@ -25,7 +26,14 @@
 		<div class="square"></div>
 		<div class="square"></div>
 	</div>
-
+	<div id="particles-js"></div>
 	<script type="text/javascript" src="colorGame.js"></script>
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
+	<script>
+        particlesJS.load('particles-js', 'particles-config.json', function() {
+            console.log('particles.js loaded');
+        });
+    </script>
 </body>
 </html>

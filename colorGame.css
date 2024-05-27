@@ -2,7 +2,29 @@ body{
 	background: #232323;
 	margin: 0;
 	font-family: monospace;
+	height: 100%;
+	width: 200vh;
+	overflow: hidden;
+	background: #2d3436;
 }
+/* Ensure particles container is positioned correctly */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure particles are behind other elements */
+}
+
+/* Adjust z-index for game elements */
+#container,
+h1,
+#stripe {
+    position: relative;
+    z-index: 1; /* Ensures game elements are on top */
+}
+
 
 .square{
 	width: 30%;
